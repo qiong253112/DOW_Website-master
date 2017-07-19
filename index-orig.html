@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/Movie" style="" class="js fontface video fullscreen isMuted videoPaused freezeVideo">
+<head>
+	<meta charset="utf-8">
+	<title>DAY OF WAR | Official Movie Site</title>
+	<link rel="image_src" type="image/jpeg" href="img/thumb.jpg">
+	<link rel="canonical" href="http://www.dayofwarmovie.com/">
+	<link rel="alternate" media="only screen and (max-width: 640px)" href="http://www.dayofwarmovie.com/mobile/">
+	<meta property="og:title" content="Day of War-Official Movie Site">
+	<meta property="og:type" content="movie">
+	<meta property="og:url" content="http://www.dayofwarmovie.com">
+	<meta property="og:description" content="Day of War Movie">
+	<meta property="og:site_name" content="Day of War- Official Movie Site">
+	<meta property="og:image" content="http://www.dayofwarmovie.com/img/thumb.jpg">
+	<meta name="description" content="Day of War movie">
+	<meta itemprop="name" content="Day of War- Official Movie Site">
+	<meta itemprop="description" content="Official movie site for Day of War">
+	<meta itemprop="image" content="http://www.dayofwarmovie.com/img/thumb.jpg">
+	<meta name="twitter:card" content="photo">
+	<meta name="twitter:site" content="@DayofWarMovie">
+	<meta name="twitter:url" content="http://www.dayofwarmovie.com">
+	<meta name="twitter:title" content="Day of War Movie">
+	<meta name="twitter:description" content="Day of War Movie Description">
+	<meta name="twitter:image" content="http://www.dayofwarmovie.com/img/twitterThumb.jpg">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=1100, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/videos.css">
+	<link rel="stylesheet" type="text/css" href="css/story.css">
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	<link href="http://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet" type="text/css">
+
+	<script src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vfld_DuR5.js" async=""></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.backgroundSize.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="js/soundmanager2-nodebug-jsmin.js"></script>
+	<script type="text/javascript" src="js/Sequencer.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullscreen.js"></script>
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/videos.js"></script>
+	<script type="text/javascript" src="js/story.js"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
+</head>
+
+<body>
+
+<div id="shell">
+	<!-- preload -->
+
+	<div id="bg" class="absFull" style="display: block; ">
+		<video id="bgVideo" class="abs" width="1024" height="576" loop="" autoplay="" oncanplay="handleVideoCanPlay()" style="height: 1098.5625px; width: 1953px; left: 0px; ">
+			<source src="http://downloads.paramount.com/mp/WWZ/website/bg.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+			<source src="http://downloads.paramount.com/mp/WWZ/website/bg.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+		</video>
+	</div>
+	<div class="abs" id="bgCover"></div>
+
+    <div class="absFull" id="header" style="margin-top: 0px; ">
+    	<ul id="menu" style="margin-left: 0px; ">
+        	<li><a href="index.php" rel="home" class="menuBtn">HOME</a></li>
+        	<li><a href="story.php" rel="story" class="menuBtn selected">STORY</a></li>
+        	<li><a href="videos.php" rel="videos" class="menuBtn">VIDEOS</a></li>
+        	<li><a href="gallery.php" rel="gallery" class="menuBtn">GALLERY</a></li>
+        	<li><a href="http://paramountstore.com/world-war-z.html?utm_source=WWZ+Website&amp;utm_medium=Store+Link&amp;utm_campaign=Site_Link" class="menuBtn htmlLink" target="_blank" onclick="pauseSite();trackEvent('Homepage', 'Store');">STORE</a></li>
+        	<li><a href="register/index.html" class="htmlLink" target="_blank" id="registerBtn" onclick="pauseSite();trackEvent('Homepage', 'Get Updates');">GET UPDATES</a></li>
+			<li>FIND US ON:<a href="http://www.Facebook.Com/WorldWarZMovie" target="_blank" id="socialFB" class="htmlLink" onclick="pauseSite();trackEvent('Homepage','Facebook')"></a><a href="http://www.Twitter.com/WorldWarZMovie" target="_blank" id="socialTW" class="htmlLink" onclick="pauseSite();trackEvent('Homepage','Twitter')"></a></li>
+        </ul>
+		<div id="right">
+            <a href="#" class="topRightBtn" id="soundIcon"></a>
+            <a href="#" class="topRightBtn" id="playPauseIcon"></a>
+            <a href="#" class="topRightBtn" id="fsIcon"></a>
+        </div>
+    </div>
+
+
+    <div id="footer" style="margin-bottom: 0px; ">
+		<div id="center2">
+		<a href="#" onclick="trackEvent('Homepage', 'Watch Trailer');changeSection('videos')" id="homeTrailerBtn">WATCH THE NEW TRAILER</a><br>
+			EXPERIENCE IT IN <img src="img/main/real3d.png" width="83" height="27" alt="Real3D" id="real3d"> AND LARGE FORMAT THEATERS<br>
+			<img src="img/main/3dLogos.png" width="165" height="30">
+		</div>
+		<div id="bar"></div>
+		<div id="left"><img src="img/main/footerLogosL.png" width="205" height="62"></div>
+		<div id="right"><img src="img/main/footerLogosR.png" width="175" height="62"></div>
+		<div id="center" class="legalFooter">
+			<div style="display: inline-block; vertical-align: top; margin-right: 4px; text-align: left;"><img src="img/main/rating.png" width="171" height="40">
+			<div id="ratingsLinks">
+				<a href="http://www.parentalguide.org" target="_blank" class="ratingsBtn">PARENTALGUIDE.ORG</a> | <a href="http://filmratings.com" target="_blank" class="ratingsBtn">FILMRATINGS.COM</a> | <a href="http://www.mpaa.org" target="_blank" class="ratingsBtn">MPAA.ORG</a>
+			</div></div>
+			<div style="display: inline-block; vertical-align: top; text-align: left;"><a href="http://www.paramountmovies.com/legal/termsofuse.php?bgcolor=000000&amp;linkcolor=FFFFFF&amp;fontcolor=CCCCCC" target="_blank" class="footerBtn noLeft">TERMS OF USE</a>|<a href="http://www.paramountmovies.com/legal/privacypolicy.php?bgcolor=000000&amp;linkcolor=FFFFFF&amp;fontcolor=CCCCCC" target="_blank" class="footerBtn">PRIVACY POLICY</a>|<a href="#" id="creditsBtn" class="footerBtn">CREDITS</a>
+			<a href="https://apps.paramountpictures.com/movie/worldwarz/releasedates/release-dates.html" target="_blank" id="intlBtn" class="footerBtn noLeft">GLOBAL SITE AND RELEASE DATES</a>
+©2013 PARAMOUNT PICTURES.  ALL RIGHTS RESERVED.<br>
+<span itemprop="actor">Brad Pitt</span> in World War Z. Watch the trailer on the official movie site.</div><br>
+			
+		</div>
+
+		<div id="creditsDrawer">
+			<img src="img/billing.png" width="800" height="131" style="margin-top: 15px;" id="creditsImg" alt="A Marc Forster Film. Brad Pitt in World War Z. Based on the novel by Max Brooks.">
+			<a href="#" id="creditsClose">[x] close</a>
+		</div>
+    </div>
+
+
+    <div class="" id="front" style="top: 39%; ">
+        <a href="#" id="logoBtn" class=""><img src="img/logoZ.png" width="980" height="404" alt="World War Z" class="abs logo" id="logoZ" style="width: 715.5940594059406px; height: 295px; margin-left: -357.7970297029703px; margin-top: -147.5px; ">
+        <img src="img/logoWorldWar.png" width="980" height="404" alt="World War Z" class="abs logo" id="logoWW" style="width: 715.5940594059406px; height: 295px; margin-left: -357.7970297029703px; margin-top: -147.5px; display: block; opacity: 1; ">
+        <img src="img/logoPreload.png" width="980" height="404" alt="World War Z: There will be no warning" class="abs logo" id="logoPre" style="width: 715.5940594059406px; height: 295px; margin-left: -357.7970297029703px; margin-top: -147.5px; display: none; "></a>
+		<div class="abs" id="enterLabel" style="margin-top: 118px; ">TAP TO ENTER</div>
+		<img src="img/pitt.png" width="516" height="40" alt="Brad Pitt" class="abs" id="logoBrad" style="margin-top: -171.1px; width: 376.78217821782175px; height: 29.207920792079207px; margin-left: -188.39108910891088px; display: block; opacity: 1; ">
+		<img class="abs" id="releaseDate" src="img/releaseDate.png" width="212" height="73" alt="In Theaters June 21" style="margin-top: 112.1px; width: 154.8019801980198px; height: 53.304455445544555px; margin-left: -77.4009900990099px; display: block; ">
+	</div>
+
+
+    <div class="" id="subLogo" style="display: block; ">
+		<img src="img/subLogo.png" width="540" height="263" alt="World War Z" id="subLogoImg" style="width: 324px; height: 157.79999999999998px; "><br>
+		<img id="subLogoReleaseDate" src="img/releaseDate.png" width="212" height="73" alt="In Theaters June 21" style="width: 127.19999999999999px; height: 43.8px; "><br>
+		EXPERIENCE IT IN <img src="img/main/real3d.png" width="83" height="27" alt="Real3D" id="real3d"> AND LARGE FORMAT THEATERS<br>
+		<img src="img/main/3dLogos.png" width="165" height="30" id="subLogo3dLogos">
+	</div>
+
+	<div id="story" style="display: block; z-index: 121; ">
+		<img id="bgL" class="storyBg" src="img/story/bgL.jpg" width="835" height="966" style="width: 977px; height: 760.0635559131134px; right: 50%; ">
+		<img id="bgR" class="storyBg" src="img/story/bgR.jpg" width="835" height="966" style="width: 977px; height: 760.0635559131134px; left: 50%; ">
+		<div class="fontMarc" id="storyContent" style="top: 72.84000000000002px; opacity: 1; visibility: visible; margin-top: 0px; ">
+		STORY
+		<div id="storyText">THE STORY REVOLVES AROUND UNITED NATIONS EMPLOYEE GERRY<br>
+LANE (PITT), WHO TRAVERSES THE WORLD IN A RACE AGAINST TIME TO<br>
+STOP A PANDEMIC THAT IS TOPPLING ARMIES AND GOVERNMENTS<br>
+AND THREATENING TO DECIMATE HUMANITY ITSELF.</div>
+		</div>
+	</div>
+
+
+	<div id="gallery" style="z-index: 120; display: none; ">
+		<div id="bgL" style="left: -51%; "></div>
+		<div id="bgR" style="right: -51%; "></div>
+
+		<div id="galleryShell" style="opacity: 0; visibility: hidden; display: block; ">
+			<img src="img/gallery/preloader.gif" width="50" height="50" id="galleryLoad" class="abs">
+			<div id="galleryImg" style="opacity: 1; visibility: visible; "><img src="img/gallery/5.jpg" style="position: absolute; height: 1302px; width: 1953px; left: 0px; top: 0px; " id="cover"></div>
+			
+
+	<a href="#" id="galleryBack" style="margin-left: -100px; "></a>
+	<a href="#" id="galleryNext" style="margin-right: -100px; "></a>
+		</div>
+	</div><!-- end gallery -->
+
+	<div id="videos" style="z-index: 120; display: none; ">
+		<div id="bgL" style="left: -50%; "></div>
+		<div id="bgR" style="right: -50%; "></div>
+
+		<div id="videosShell" style="display: none; "><div id="videosPlayer"></div></div>
+		<div id="videosFooter" style="bottom: -65px; ">
+			<div id="videosMenu">
+				<a href="#" vidid="trailer2" class="videoThumb selected" alt="WATCH THE WORLD WAR Z TRAILER"><img src="img/videos/thumb3.jpg" width="122" height="50"><div class="videoThumbText">TRAILER</div></a>
+				<a href="#" vidid="tvspot1" class="videoThumb" alt="WATCH THE TV SPOT"><img src="img/videos/thumb1.jpg" width="122" height="50"><div class="videoThumbText">TV SPOT</div></a>
+				<a href="#" vidid="trailer" class="videoThumb" alt="WATCH THE WORLD WAR Z TEASER TRAILER"><img src="img/videos/thumb2.jpg" width="122" height="50"><div class="videoThumbText">TEASER TRAILER</div></a>
+			</div>
+
+			<div id="videosShare">
+				<div id="videoShare" class="vidShareBar">Share the Trailer</div>
+				<div id="videoShareYT" class="vidShareBar"><img src="img/videos/youtube.png" width="30" height="30"><input type="text" id="vidShareText" class="vidShareText"></div>
+				<div id="videoShareMore" class="vidShareBar"><a href="#" id="videoShareFB"><img src="img/videos/facebook.png" width="30" height="30"></a><a href="#" id="videoShareTW"><img src="img/videos/twitter.png" width="30" height="30"></a></div>
+			</div>
+		</div>
+	</div><!-- end videos -->
+</div><!-- shell -->
+
+
+</body></html>

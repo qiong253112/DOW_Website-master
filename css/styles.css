@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue-webfont.eot');
+    src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue-webfont.woff') format('woff'),
+         url('../fonts/bebasneue-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.fontMarc {
+	font-family: 'Marcellus SC', serif;
+}
+
+
+.abs {
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+.absFull {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+* {
+	outline: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: 0;
+}
+
+html {
+	height: 100%;
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	overflow-y: auto;
+	overflow-x: auto;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	font-family: bebas_neueregular, Arial, Helvetica, sans-serif;
+	color: #464646;
+	background: #000;
+}
+
+/* upgrade page */
+
+#upgrade {
+	display: none;
+	top: 0;
+	background:url(../img/upgrade/bg.jpg) top no-repeat;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	line-height: 18px;
+	color: #900;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* main site */
+
+#shell {
+	min-height: 600px;
+	min-width: 800px;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+}
+	
+#bg {
+	top: 50px;
+	display: none;
+}
+
+#bgCover {
+	background: url(img/footerGrad2.png) bottom no-repeat;
+	width: 100%;
+	bottom: 0px;
+	display: block;
+}
+
+#header {
+	height: 50px;
+	border-bottom: 1px solid #313131;
+	text-align: center;
+	background: #000;
+	margin-top: -62px;
+}
+	#menu {
+		list-style: none;
+		position: relative;
+		height: 50px;
+	}
+		#menu li {
+			display: inline-block;
+			color: #45474a;
+			font-size: 20px;
+			
+		}
+			.menuBtn {
+				display: block;
+				height: 50px;
+				line-height: 50px;
+				color: #45474a;
+				font-size: 20px;
+				padding-left: 18px;
+				padding-right: 12px;
+				background: url(../img/main/menuBtnTab.png) top left no-repeat;
+			}
+			
+			.menuBtn:hover, #registerBtn:hover {
+				color: #fff;
+				background-position: bottom left;
+			}
+			
+			.menuBtn.selected {
+				color: #fff;
+				background-position: bottom left;
+				cursor: default;
+			}
+			
+			#registerBtn {
+				display: block;
+				height: 50px;
+				line-height: 50px;
+				color: #ae0000;
+				font-size: 20px;
+				padding: 0 18px;
+				background: url(../img/main/menuBtnTab2.png) top left no-repeat;
+			}
+			
+			
+	
+		#socialFB {
+			top: 8px;
+			left: 1px;
+			position: relative;
+			background: url(../img/facebook.png) top right no-repeat;
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			margin-left: 10px;
+			margin-right: 7px;
+		}
+	
+		#socialTW {
+			top: 8px;
+			left: 0;
+			position: relative;
+			background: url(../img/twitter.png) top left no-repeat;
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+		}
+		
+		#socialFB:hover, #socialTW:hover {
+			background-position: bottom right;
+		}
+	
+	#header #right {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+		.topRightBtn {
+			position: relative;
+			display: inline-block;
+			top: 0;
+			width: 50px;
+			height: 50px;
+			border-left: 1px solid #313131;
+		}
+		
+		#playPauseIcon { background: url(../img/main/playPause.png) top left; }
+		#playPauseIcon:hover { background-position: bottom left; }
+		.videoPaused #playPauseIcon { background-position: top right; }
+		.videoPaused #playPauseIcon:hover { background-position: bottom right; }
+		.videoPaused #playPauseIcon { background-position: top right; }
+		.freezeVideo #playPauseIcon { display: none; }
+		
+		#soundIcon { background: url(../img/main/soundIcon.png) top left; }
+		#soundIcon:hover { background-position: bottom left; }
+		.isMuted #soundIcon  { background-position: top right;}
+		.isMuted #soundIcon:hover{ background-position: bottom right; }
+		.noSound #soundIcon {display: none; }
+		
+		#fsIcon { background: url(../img/main/fullscreenIcon.png) top left;	}
+		#fsIcon:hover { background-position: bottom left; }
+		.isFull #fsIcon { background-position: top right;	}
+		.isFull #fsIcon:hover { background-position: bottom right; }
+		.no-fullscreen #fsIcon { display: none;	}
+		
+	
+#footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	margin-bottom: -200px;
+	text-align: center;
+}
+
+	#footer #bar {
+		display:block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 62px;
+		width: 100%;
+		border-top: 1px solid #313131;
+		background: #000;
+	}
+	#footer #left {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 62px;
+	}
+	#footer #right {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 62px;
+	}
+	
+	#footer #center2 {
+		display:block;
+		height: 115px;
+		position: absolute;
+		width: 400px;
+		left: 50%;
+		margin-left: -200px;
+		text-align: center;
+		color: #414748;
+		font-size: 15px;
+		bottom: 64px;
+		letter-spacing: 1px;
+	}
+	
+		#real3d {
+			margin: 0 5px;
+			vertical-align: middle;
+		}
+		
+		#homeTrailerBtn {
+			display: inline-block;
+			width: 279px;
+			height: 43px;
+			background: url(../img/main/trailerBtnBg.png) top left;
+			color: #fff;
+			text-align: left;
+			padding-left: 26px;
+			line-height: 43px;
+			font-size: 25px;
+			margin-bottom: 10px;
+		}
+		
+		#homeTrailerBtn:hover {
+			background-position: bottom left;
+			color: #ccc;
+		}
+	
+	#footer #center {
+		vertical-align: top;
+		display:block;
+		height: 62px;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		color: #464646;
+		font-size: 11px;
+		line-height: 11px;
+		bottom: -5px;
+	}
+		.footerBtn {
+			letter-spacing: inherit;
+			font-size: 12px;
+			color: #333;
+			margin: 4px;
+			white-space: nowrap;
+		}
+		
+		.footerBtn.noLeft {
+			margin-left: 0;
+		}
+		
+		.footerBtn:hover {
+			color: #fff;
+		}
+		
+		#creditsBtn {
+			color: #666;
+		}
+		
+		#intlBtn {
+			color: #464646;
+			background:url(../img/main/flags.png) top right no-repeat;
+			padding-right: 128px;
+			display: block;
+			
+		}
+		
+		#intlBtn:hover {
+			color: #fff;
+			background-position: bottom right;
+		}
+		
+	#creditsDrawer {
+		z-index: 140;
+		position: absolute;
+		bottom: -230px;
+		left: 0;
+		width: 100%;
+		height: 199px;
+		border-top: solid #444 1px;
+		background: #000;
+		text-align: center;
+	}
+	
+		#creditsClose {
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: url(../img/billingClose.png);
+			width: 36px;
+			height: 36px;
+		}
+	
+		#ratingsLinks {
+			color: #4f4f4f;
+			font-size: 8px;	
+		}
+		
+			.ratingsBtn {
+				color: #4f4f4f;
+				font-size: 10px;
+			}
+			
+			.ratingsBtn:hover {
+				color: #fff;
+			}	
+	
+	
+
+/* preloader */
+
+#preload {
+	z-index: 100;
+}
+
+#preload #top {
+	background: url(../img/preloader/top.jpg) bottom center no-repeat;
+	margin-top: -2px;
+	height: 50%;
+}
+#preload #bottom {
+	background: url(../img/preloader/bottom.jpg) top center no-repeat;
+	top: 50%;
+	height: 50%;
+	margin-top: 2px;
+}
+#preload #bar {
+	top: 50%;
+	height: 4px;
+	margin-top: -2px;
+}
+
+#preload #progressBar {
+	background: #ac0c0d url(../img/preloader/progBar.png) top right repeat-y;
+	width: 0%;
+}
+
+
+/* site wide */
+
+
+#front {
+	z-index: 101;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+.logo {
+	margin-left: -490px;
+	margin-top: -202px;
+	display: none;
+}
+
+#logoBtn.disabled {
+	cursor: default;
+}
+
+#logoWW {
+	display: none;
+	opacity: 0;
+}
+
+#logoDOW, #logoPre {
+	display: block;
+}
+
+#logoSeries {
+	display: none;
+	opacity: 0;
+
+}
+
+#enterLabel {
+	margin-top: 202px;
+	color: #acbabc;
+	margin-left: -250px;
+	font-size: 32px;
+	letter-spacing: 10px;
+	line-height: 26px;
+	text-align: center;
+	width: 500px;
+	display: none;
+}
+#releaseDate {
+	margin-top: 202px;
+	color: #acbabc;
+	margin-left: -106px;
+	font-size: 32px;
+	letter-spacing: 10px;
+	line-height: 26px;
+	display: none;
+}
+
+	.releaseDate2 {
+		font-size: 16px;
+		letter-spacing: 5px;
+	}
+	
+	
+#subLogo {
+	position: absolute;
+	z-index: 130;
+	left: 50%;
+	bottom: 63px;
+	width: 550px;
+	margin-left: -275px;
+	text-align: center;
+	display: none;
+}
+
+	#subLogoReleaseDate {
+		margin-bottom: -10px;
+	}

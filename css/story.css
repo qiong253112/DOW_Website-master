@@ -1,0 +1,51 @@
+/* CSS Document */
+#story {
+	z-index: 121;
+	display: none;
+	position: absolute;
+	top: 51px;
+	left: 0;
+	bottom: 63px;
+	width: 100%;
+	overflow: hidden;
+}
+	
+#story #bgL {
+	position:absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	right: 100%;
+	margin-right: -2px;
+}
+
+#story #bgR {
+	position:absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+}
+
+#storyContent {
+	position: absolute;
+	top: 130px;
+	left: 50%;
+	margin-left: -392px;
+	width: 440px;
+	font-size: 35px;
+	color: #fff;
+	letter-spacing: 4px;
+	height: 140px;
+}
+
+	#storyText {
+		margin-top: 15px;
+		position: relative;
+		font-size: 13px;
+		color: #a3a3a3;
+		letter-spacing: 0px;
+		text-align: right;
+		width: 100%;
+		
+	}

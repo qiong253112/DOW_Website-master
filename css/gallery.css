@@ -1,0 +1,76 @@
+/* CSS Document */
+#gallery {
+	z-index: 120;
+	display: none;
+	position: absolute;
+	top: 51px;
+	left: 0;
+	bottom: 63px;
+	width: 100%;
+}
+	
+#gallery #bgL {
+	position:absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: -51%;
+	width: 51%;
+	background: #000;
+}
+
+#gallery #bgR {
+	position:absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	right: -51%;
+	width: 51%;
+	background: #000;
+}
+
+
+#galleryShell {
+	display: block;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	overflow: hidden;
+}
+
+#galleryLoad {
+	top: 50%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#galleryNext {
+	position: absolute;
+	right: 0; top: 50%;
+	height: 100px; width: 100px;
+	margin-top: -50px;
+	margin-right: -100px;
+	background: url(../img/gallery/arrowRight.png) top left;
+}
+
+	#galleryNext:hover {
+		background-position: bottom left;
+	}
+
+#galleryBack {
+	position: absolute;
+	left: 0; top: 50%;
+	height:100px; width: 100px;
+	margin-top: -50px;
+	margin-left: -100px;
+	background: url(../img/gallery/arrowLeft.png) top left;
+}
+
+	#galleryBack:hover {
+		background-position: bottom left;
+	}

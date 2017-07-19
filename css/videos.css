@@ -1,0 +1,143 @@
+/* CSS Document */
+#videos {
+	z-index: 120;
+	display: none;
+	position: absolute;
+	top: 51px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+	
+#videos #bgL {
+	position:absolute;
+	display: block;
+	top: 0;
+	bottom: 63px;
+	left: -50%;
+	width: 50%;
+	background: #000;
+}
+
+#videos #bgR {
+	position:absolute;
+	display: block;
+	top: 0;
+	bottom: 63px;
+	right: -50%;
+	width: 50%;
+	background: #000;
+}
+
+
+#videosShell {
+	display: block;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 63px;
+	position: absolute;
+}
+	
+#videosFooter {
+	height: 62px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #464646;
+	background: #000;
+	font-size: 11px;
+	bottom: -65px;
+	letter-spacing: 1px;
+}
+
+
+	#videoMenu {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 10px;
+		width: 300px;
+		height: 70px;
+		text-align: left;
+	}
+		.videoThumb {
+			float: left;
+			margin: 1px 5px;
+			width: 122px;
+			height: 66px;
+			cursor: pointer;
+		}
+
+		.videoThumbText {
+			margin-top: -3px;
+			font-size: 12px;
+  			text-transform: uppercase;
+			text-align: center;
+			color: #45474a;
+		}
+		
+		.videoThumb:hover .videoThumbText {
+			color: #fff;
+		}
+		
+		.videoThumb.selected .videoThumbText {
+			color: #fff;
+			cursor: default;
+		}
+	
+	#videosShare {
+		position: absolute;
+		bottom: 6px;
+		right: 6px;
+	}
+		#videoShare {
+			background:url(../img/videos/shareBg.jpg);
+			text-align: center;
+			vertical-align: middle;
+			font-size: 22px;
+  			text-transform: uppercase;
+			color: #000;
+			line-height: 48px;
+			height: 50px;
+		}
+		#videoShare img {
+			margin-right: 10px;
+		}
+		
+		#videoShareYT {
+			background:url(../img/videos/shareBg2.jpg);
+			text-align: center;
+			vertical-align: middle;
+			padding-top: 10px;
+			height: 40px;
+		}
+			#videoShareYT img {
+				float: right;
+			}
+			.vidShareText {
+				height: 30px;
+				background: #ccc;
+				padding: 0 10px;
+				width: 135px;	
+			}
+		
+		#videoShareMore {
+			background:url(../img/videos/shareBg2.jpg);
+			text-align: center;
+			vertical-align: middle;
+			padding-top: 10px;
+			height: 40px;
+		}
+		#videoShareMore a {
+			margin: 0 2px;
+		}
+		
+		.vidShareBar {
+			position: relative;
+			top: 50%;
+			margin-top: -25px;
+			display: inline-block;
+			padding-left: 11px;
+			padding-right: 11px;
+		}
